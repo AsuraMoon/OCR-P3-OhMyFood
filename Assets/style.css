@@ -1,0 +1,70 @@
+/*$primary:#9356DC;
+$secondary:#FF79DA;
+$tertiary :#99E2D0;
+$darkgray: #666;
+$gray: #aaa;
+$lightgray: #ddd;
+$black : #000;
+
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;
+
+768px
+1024px*/
+
+/* Global Font Family */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: unset;
+    padding: unset;
+    text-decoration: unset;
+    color: black;
+    letter-spacing: 0.05rem;
+}
+
+/* Header */
+.logo{
+    width: 100%;
+    text-align: center;
+}
+.logo__title{
+    display: block;
+    font-family: 'Shrikhand', cursive;
+    padding: 0.50rem 0;
+    margin-bottom: 0.15rem;
+    box-shadow: 0px 5px 15px rgb(200, 200, 200);
+}
+.logo__location{
+    background-color: rgb(235, 235, 235);
+    padding: 0.75rem 0;
+    display: flex;
+    justify-content: center;
+}
+.logo__location__icon{
+    margin-right: 0.75rem;
+}
+.logo__description{
+    background-color: rgb(245, 245, 245);
+    padding: 2rem 0;
+}
+.logo__description__title>h3{
+    width: calc(66.67%);
+}
+.logo__description__wrap{
+    display: flex;
+    justify-content: center;
+    padding: 0.50rem calc(10%);
+}
+.logo__description__link{
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    background: rgb(255,121,218);
+    background: linear-gradient(190deg, rgba(255,121,218) 0%, rgba(147,86,220) 100%);
+    border-radius: 5rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+}
+
+/* Navigation */

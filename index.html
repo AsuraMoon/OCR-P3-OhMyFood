@@ -9,25 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e16f2e5c21.js" crossorigin="anonymous"></script>
     <title>Oh My Food</title>
-    <link rel="stylesheet" href="Assets/style.scss">
+    <link rel="stylesheet" href="Assets/style.css">
 </head>
 <body>
-    <header>
-        <h1>ohmyfood</h1>
-        <section>
-            <h3>
-                <i class="fa-solid fa-location-dot"></i>
-                Paris Belleville
-            </h3>
+    <header class="logo">
+        <h1 class="logo logo__title">ohmyfood</h1>
+        <section class="logo logo__location">
+            <i class="fa-solid fa-location-dot logo__location__icon"></i>
+            <h4>
+                Paris, Belleville
+            </h4>
         </section>
-        <section>
-            <h3>
-                Réservez le menu qui vous convient
-            </h3>
-            <p>
+        <section class="logo logo__description">
+            <span class="logo__description__title logo__description__wrap">
+                <h3>
+                    Réservez le menu qui vous convient
+                </h3>
+            </span>
+            <p class="logo__description__wrap">
                 Découvrez des restaurants d'exception, sélectionnés par nos soins
             </p>
-            <a href="#">
+            <a href="#" class="logo__description__link">
                 Explorer nos restaurants
             </a>
         </section>
@@ -58,42 +60,42 @@
             </h5>
         </article>
     </section>
-    <main>
-        <h3>Restaurants</h3>
-        <div>
-            <a href="#">
-                <span>Nouveau</span>
-                <!--img src="" alt=""-->
-                <p>
+    <main class="restaurants">
+        <h3 class="restaurants__titre">Restaurants</h3>
+        <div class="restaurants__choix">
+            <a href="#" class="restaurants__choix__carte">
+                <span class="restaurants__choix__carte__nouveau">Nouveau</span>
+                <!--img src="" alt="" class="restaurants__choix__carte__image"-->
+                <p class="restaurants__choix__carte__titre">
                     La palette du goût
                 </p>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <footer>Ménilmontant</footer>
+                <i class="fa-regular fa-heart restaurants__choix__carte__favoris"></i>
+                <footer class="restaurants__choix__carte__lieu">Ménilmontant</footer>
             </a>
-            <a href="#">
-                <span>Nouveau</span>
-                <!--img src="" alt=""-->
-                <p>
+            <a href="#" class="restaurants__choix__carte">
+                <span class="restaurants__choix__carte__nouveau">Nouveau</span>
+                <!--img src="" alt="" class="restaurants__choix__carte__image"-->
+                <p class="restaurants__choix__carte__titre">
                     La palette du goût
                 </p>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <footer>Charonne</footer>
+                <i class="fa-regular fa-heart restaurants__choix__carte__favoris"></i>
+                <footer class="restaurants__choix__carte__lieu">Charonne</footer>
             </a>
-            <a href="#">
-                <!--img src="" alt=""-->
-                <p>
+            <a href="#" class="restaurants__choix__carte">
+                <!--img src="" alt="" class="restaurants__choix__carte__image"-->
+                <p class="restaurants__choix__carte__titre">
                     La palette du goût
                 </p>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <footer>Cité rouge</footer>
+                <i class="fa-regular fa-heart restaurants__choix__carte__favoris"></i>
+                <footer class="restaurants__choix__carte__lieu">Cité rouge</footer>
             </a>
-            <a href="#">
-                <!--img src="" alt=""-->
-                <p>
+            <a href="#" class="restaurants__choix__carte">
+                <!--img src="" alt="" class="restaurants__choix__carte__image"-->
+                <p class="restaurants__choix__carte__titre">
                     La palette du goût
                 </p>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <footer>Folie-Méricourt</footer>
+                <i class="fa-regular fa-heart restaurants__choix__carte__favoris"></i>
+                <footer class="restaurants__choix__carte__lieu">Folie-Méricourt</footer>
             </a>
         </div>
     </main>
