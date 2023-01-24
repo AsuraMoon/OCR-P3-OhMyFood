@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Assets/style.css">
 </head>
 <body>
+    <!-- Banner + Logo-->
     <header class="logo">
         <h1 class="logo logo__title">ohmyfood</h1>
         <section class="logo logo__location">
@@ -21,11 +22,11 @@
             </h4>
         </section>
         <section class="logo logo__description">
-            <span class="logo__description__title logo__description__wrap">
+            <div class="logo__description__title logo__description__wrap">
                 <h3>
                     Réservez le menu qui vous convient
                 </h3>
-            </span>
+            </div>
             <p class="logo__description__wrap">
                 Découvrez des restaurants d'exception, sélectionnés par nos soins
             </p>
@@ -34,33 +35,37 @@
             </a>
         </section>
     </header>
-    <nav></nav>
-    <section>
+    <!-- Section Explanation -->
+    <div class="explanation__title">
         <h2>Fonctionnement</h2>
-        <article>
-            <span>1</span>
-            <h5>
-                <i class="fa-solid fa-mobile-button"></i>
+    </div>
+    <section class="explanation">
+        <article class="explanation__bubble">
+            <div class="explanation__number">1</div>
+            <i class="fa-solid fa-mobile-button explanation__icon"></i>
+            <h5 class="explanation__text">
                 Choisissez un restaurant
             </h5>
         </article>
-        <article>
-            <span>2</span>            
-            <h5>
+        <article class="explanation__bubble">
+            <div class="explanation__number">2</div>     
+            <div class="explanation__icon">
                 <i class="fa-solid fa-ellipsis-vertical"></i>
                 <i class="fa-solid fa-bars"></i>
+            </div>       
+            <h5 class="explanation__text">
                 Composez votre menu
             </h5>
         </article>
-        <article>
-            <span>3</span>
-            <h5>
-                <i class="fa-solid fa-store"></i>
+        <article class="explanation__bubble">
+            <div class="explanation__number">3</div>
+            <i class="fa-solid fa-store explanation__icon"></i>
+            <h5 class="explanation__text">
                 Dégustez au restaurant
             </h5>
         </article>
     </section>
-    <main class="restaurants">
+    <nav class="restaurants">
         <h3 class="restaurants__titre">Restaurants</h3>
         <div class="restaurants__choix">
             <a href="#" class="restaurants__choix__carte">
@@ -98,7 +103,7 @@
                 <footer class="restaurants__choix__carte__lieu">Folie-Méricourt</footer>
             </a>
         </div>
-    </main>
+    </nav>
     <footer>
         <h3>Oh my food</h3>
         <a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
