@@ -1,0 +1,174 @@
+
+/*$primary:#9356DC;
+$secondary:#FF79DA;
+$tertiary :#99E2D0;
+$darkgray: #666;
+$gray: #aaa;
+$lightgray: #ddd;
+$black : #000;
+
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;
+
+768px
+1024px*/
+
+/* Global Font Family */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: unset;
+    padding: unset;
+    text-decoration: unset;
+    letter-spacing: 0.05rem;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    &:visited{
+        color: black;
+    }
+}
+body{
+    min-width: 360px;
+}
+
+/* leader */
+.logo{
+    width: 100%;
+    text-align: center;
+    &__title{
+        display: block;
+        font-family: 'Shrikhand', cursive;
+        padding: 0.50rem 0;
+        margin-bottom: 0.15rem;
+        box-shadow: 0 0.50rem 1rem rgb(200, 200, 200);
+    }
+    &__location{
+        background-color: rgb(235, 235, 235);
+        padding: 0.75rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    &location__icon{
+        margin-right: 0.75rem;
+    }
+    &__description{
+        background-color: rgb(245, 245, 245);
+        padding: 2rem 0;
+    }
+    &__description__title{
+        h3{
+
+            width: calc(66.67%);
+        }
+    }
+    &__description__wrap{
+        display: flex;
+        justify-content: center;
+        padding: 0.50rem calc(10%);
+    }
+    &__description__link{
+        display: inline-block;
+        font-weight: 700;
+        color: white !important;
+        background: rgb(255,121,218);
+        background: linear-gradient(190deg, rgba(255,121,218) 0%, rgba(147,86,220) 100%);
+        border-radius: 5rem;
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+    }
+}
+
+/* Section explanation */
+.explanation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__title{
+        margin: 2rem 3rem 1rem;
+    }
+    &__bubble{
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 8%;
+        border-radius: 1.5rem;
+        margin: 1rem 2rem;
+        box-shadow: 0 0.50rem 1rem rgb(200, 200, 200);
+    }
+    &__bubble:hover{
+        background: rgba(147,86,220,.15);
+    }
+    &__number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #9356dc;
+        color: white;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        position: absolute;
+        left: 1rem;
+    }
+    &__bubble:hover{
+        .explanation__icon{
+            color: #9356dc !important;
+        }
+    }        
+    &__icon{
+        display: flex;
+        flex-direction: row;
+        width: 2rem;
+        padding-right: 8%;
+    }
+}
+.fa-bars{
+    margin-left: 0.1rem;
+}
+
+/* Nav restaurants */
+.restaurants{
+    margin: 2rem;
+    &__title{
+        margin-bottom: 2rem;
+    }
+    &__choix{
+        &__carte{
+            display: block;
+            width: 100%;
+            min-width: 2.3rem;
+            border-radius: 2rem;
+            box-shadow: 0 0.50rem 1rem rgb(200, 200, 200);
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 2.5rem;
+            &__image{
+                height: 10rem;
+                object-fit: cover;
+                width: 100%;
+                border-radius: 2rem 2rem 0 0;
+            }
+            &__nouveau{
+                background: #a9e0d1;
+                color: #3b8468;
+                font-weight: 500;
+                padding: 0.5rem 1.15rem;
+                border-radius: 0.3rem;
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+            }
+            &__description{
+                padding: 1.5rem 2.5rem;
+                display: grid;
+                grid-template-columns: auto auto;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &__lieu{
+                margin-top: 0.15rem;
+            }
+        }
+    }
+}
