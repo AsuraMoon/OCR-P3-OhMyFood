@@ -1,8 +1,8 @@
-
+$lightprimary:#9356dc26;
 $primary:#9356dc;
 $secondary:#ff79da;
-$tertiary :#99e2d0;
 $darktertiary:#278b72;
+$tertiary :#99e2d0;
 $darkgray: #c8c8c8;
 $gray: #dcdcdc;
 $lightgray: #f5f5f5;
@@ -92,10 +92,10 @@ body{
         padding: 1.5rem 8%;
         border-radius: 1.5rem;
         margin: 1rem 2rem;
-        box-shadow: 0 0.50rem 1rem rgb(200, 200, 200);
+        box-shadow: 0 0.50rem 1rem $lightgray;
     }
     &__bubble:hover{
-        background: rgba(147,86,220,.15);
+        background: $lightprimary;
     }
     &__number{
         display: flex;
@@ -111,7 +111,7 @@ body{
     }
     &__bubble:hover{
         .explanation__icon{
-            color: #9356dc !important;
+            color: $primary;
         }
     }        
     &__icon{
@@ -168,6 +168,11 @@ body{
             }
             &__lieu{
                 margin-top: 0.25rem;
+            }
+            &__favoris:hover{
+                &__icon{
+                    color: linear-gradient(190deg, $primary, $secondary);
+                }
             }
         }
     }
