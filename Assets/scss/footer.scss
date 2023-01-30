@@ -1,0 +1,40 @@
+$primary:#9356dc;
+$lightprimary:#9356dc26;
+$secondary:#ff79da;
+$darktertiary:#278b72;
+$tertiary :#99e2d0;
+$darkgray: #c8c8c8;
+$gray: #dcdcdc;
+$lightgray: #f5f5f5;
+$black : #000;
+$lightblack: #353535;
+$white : #fff;
+
+/* Footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $lightblack;
+    color: $white;
+    padding: 1.5rem 2.5rem;
+    &__title{
+        display: block;
+        font-family: 'Shrikhand', cursive;
+        padding: 0.75rem 0;
+        margin-bottom: 0.15rem;
+        font-weight: 400;
+    }
+    &__link{
+        color: white!important;
+        margin-bottom: 5px;
+        &__icon{
+            width: 15px;
+            margin-right: 5px;
+        }
+        &--skinnier{
+            font-size: 14px;
+            font-weight:lighter;
+        }
+    }
+}

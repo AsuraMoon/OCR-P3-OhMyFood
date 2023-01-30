@@ -1,0 +1,29 @@
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+}
+.footer__title {
+  display: block;
+  font-family: "Shrikhand", cursive;
+  padding: 0.75rem 0;
+  margin-bottom: 0.15rem;
+  font-weight: 400;
+}
+.footer__link {
+  color: white !important;
+  margin-bottom: 5px;
+}
+.footer__link__icon {
+  width: 15px;
+  margin-right: 5px;
+}
+.footer__link--skinnier {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=footer.css.map */

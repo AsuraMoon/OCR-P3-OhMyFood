@@ -1,0 +1,25 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;
+
+768px
+1024px*/
+
+/* Global Font Family */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: unset;
+    padding: unset;
+    text-decoration: unset;
+    letter-spacing: 0.05rem;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    &:visited{
+        color: black;
+    }
+}
+body{
+    min-width: 360px;
+}

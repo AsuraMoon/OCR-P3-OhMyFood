@@ -1,5 +1,5 @@
-$lightprimary:#9356dc26;
 $primary:#9356dc;
+$lightprimary:#9356dc26;
 $secondary:#ff79da;
 $darktertiary:#278b72;
 $tertiary :#99e2d0;
@@ -7,31 +7,8 @@ $darkgray: #c8c8c8;
 $gray: #dcdcdc;
 $lightgray: #f5f5f5;
 $black : #000;
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Shrikhand', cursive;
-
-768px
-1024px*/
-
-/* Global Font Family */
-*{
-    font-family: 'Roboto', sans-serif;
-    margin: unset;
-    padding: unset;
-    text-decoration: unset;
-    letter-spacing: 0.05rem;
-    box-sizing: border-box;
-}
-a{
-    color: $black;
-    &:visited{
-        color: $black;
-    }
-}
-body{
-    min-width: 360px;
-}
+$lightblack: #353535;
+$white : #fff;
 
 /* leader */
 .logo{
@@ -43,38 +20,39 @@ body{
         padding: 0.50rem 0;
         margin-bottom: 0.15rem;
         box-shadow: 0 0.50rem 1rem $darkgray;
+        font-size: 32px;
     }
     &__location{
         background-color: $gray;
         padding: 0.75rem 0;
         display: flex;
         justify-content: center;
-    }
-    &location__icon{
-        margin-right: 0.75rem;
+        &__icon{
+            margin-right: 0.75rem;
+        }
     }
     &__description{
         background-color: $lightgray;
         padding: 2rem 0;
-    }
-    &__description__title{
-        >h3{
-            width: calc(66.67%);
+        &__title{
+            >h3{
+                width: calc(66.67%);
+            }
         }
-    }
-    &__description__wrap{
-        display: flex;
-        justify-content: center;
-        padding: 0.50rem calc(10%);
-    }
-    &__description__link{
-        display: inline-block;
-        font-weight: 700;
-        color: white !important;
-        background: linear-gradient(190deg, $secondary, $primary);
-        border-radius: 5rem;
-        margin: 1.5rem 0;
-        padding: 1.5rem;
+        &__wrap{
+            display: flex;
+            justify-content: center;
+            padding: 0.50rem calc(10%);
+        }
+        &__link{
+            display: inline-block;
+            font-weight: 700;
+            color: white !important;
+            background: linear-gradient(190deg, $secondary, $primary);
+            border-radius: 5rem;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+        }
     }
 }
 
@@ -93,9 +71,12 @@ body{
         border-radius: 1.5rem;
         margin: 1rem 2rem;
         box-shadow: 0 0.50rem 1rem $lightgray;
-    }
-    &__bubble:hover{
-        background: $lightprimary;
+        &:hover{
+            background: $lightprimary;
+            .explanation__icon{
+                color: $primary;
+            }
+        }
     }
     &__number{
         display: flex;
@@ -108,17 +89,15 @@ body{
         border-radius: 50%;
         position: absolute;
         left: 1rem;
-    }
-    &__bubble:hover{
-        .explanation__icon{
-            color: $primary;
-        }
-    }        
+    }      
     &__icon{
         display: flex;
         flex-direction: row;
         width: 2rem;
         padding-right: 8%;
+    }
+    &__text{
+        font-size: 14px;
     }
 }
 .fa-bars{
@@ -169,11 +148,27 @@ body{
             &__lieu{
                 margin-top: 0.25rem;
             }
-            &__favoris:hover{
+            &__favoris{
                 &__icon{
-                    color: linear-gradient(190deg, $primary, $secondary);
+                    background-color: white;
+                    position: relative;
+                    &--add{
+                        position: relative;
+                        display: none;
+                    }
+                }
+                &:hover{
+                    &__icon{
+                        background-color: white;
+                        position: relative;
+                        display: none;
+                        &--add{
+                            position: relative;
+                        }
+                    }
                 }
             }
         }
     }
 }
+
