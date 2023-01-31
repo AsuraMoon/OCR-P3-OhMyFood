@@ -1,0 +1,17 @@
+.like{
+    &__coeur{
+        position: relative;
+        &__full{
+            display: none;
+        }
+    }
+    &:hover{
+        .like__coeur{
+            display: none;
+            &__full{
+                display: block;
+                color: red;
+            }
+        }
+    }
+}
