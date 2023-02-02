@@ -133,21 +133,8 @@
   align-items: center;
   justify-content: space-between;
 }
-.restaurants__choix__carte__lieu {
-  margin-top: 0.25rem;
-}
-.restaurants__choix__carte__favoris__icon {
-  position: relative;
-}
-.restaurants__choix__carte__favoris__icon__full {
-  display: none;
-}
-.restaurants__choix__carte__favoris:hover .restaurants__choix__carte__favoris__icon {
-  display: none;
-}
-.restaurants__choix__carte__favoris:hover .restaurants__choix__carte__favoris__icon__full {
-  display: block;
-  color: red;
+.restaurants__choix__carte__description__lieu {
+  margin-top: 0.33rem;
 }
 
 /*# sourceMappingURL=style.css.map */

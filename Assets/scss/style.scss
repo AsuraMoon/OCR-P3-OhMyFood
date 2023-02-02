@@ -10,6 +10,7 @@ $black : #000;
 $lightblack: #353535;
 $white : #fff;
 
+
 /* leader */
 .logo{
     width: 100%;
@@ -144,25 +145,8 @@ $white : #fff;
                 grid-template-columns: auto auto;
                 align-items: center;
                 justify-content: space-between;
-            }
-            &__lieu{
-                margin-top: 0.25rem;
-            }
-            &__favoris{
-                &__icon{
-                    position: relative;
-                    &__full{
-                        display: none;
-                    }
-                }
-                &:hover{
-                    .restaurants__choix__carte__favoris__icon{
-                        display: none;
-                        &__full{
-                            display: block;
-                            color: red;
-                        }
-                    }
+                &__lieu{
+                    margin-top: 0.33rem;
                 }
             }
         }

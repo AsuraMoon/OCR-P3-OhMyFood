@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e16f2e5c21.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="Assets/css/française.css">
     <link rel="stylesheet" href="Assets/css/footer.css">
     <link rel="stylesheet" href="Assets/css/global.css">
+    <link rel="stylesheet" href="Assets/css/menu.css">
     <link rel="stylesheet" href="Assets/css/header.css">
     <link rel="stylesheet" href="Assets/css/coeur.css">
     <link rel="stylesheet" href="Assets/css/card.css">
@@ -27,16 +27,147 @@
     <!-- Image Restaurant-->
     <div class="restaurant">
         <img src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="restaurant__pic">
-        <main class="restaurants__main">
-            <section class="restaurants__main__titre">
-                <h3> Le délice des sens </h3>
+        <main class="restaurant__main">
+
+            <section class="restaurant__main__titre">
+                <h3> À la française </h3>
+                <div class="like">
+                    <i class="fa-regular fa-heart like__coeur"></i>
+                    <i class="fa-solid fa-heart like__coeur__full"></i>
+                </div>
             </section>
-            <div class="like">
-                <i class="fa-regular fa-heart like__coeur"></i>
-                <i class="fa-solid fa-heart like__coeur__full"></i>
+
+            <!-- MENU -->
+            <section class="restaurant__main__menu">
+
+                <!-- ENTREES -->
+                <article class="restaurant__main__menu__plats">
+                    <h5 class="restaurant__main__menu__plats__titre">ENTRÉES</h5>
+                    <div class="restaurant__main__menu__plats__decoration"></div>
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Tartare de poulpe acidulé</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Aux zestes d'orange</span>
+                                <span class="card__description__details__price">25 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Velouté de légumes d'antan</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Carotte, panais, topinambour</span>
+                                <span class="card__description__details__price">35 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Soupe à l'oignon</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Revistée</span>
+                                <span class="card__description__details__price">20 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+
+                </article>
+
+                <!-- PLATS -->
+                <article class="restaurant__main__menu__plats">
+                    <h5 class="restaurant__main__menu__plats__titre">PLATS</h5>
+                    <div class="restaurant__main__menu__plats__decoration"></div>
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Coquilles Saint-Jacques</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Accompagnées d'une purée de panais </span>
+                                <span class="card__description__details__price">40 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Magret de canard</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Et parmentier de pommes de terre</span>
+                                <span class="card__description__details__price">35 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Pigeonneau d'Ille-et-Vilaine</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Sur son lit de gnocchis aux légumes</span>
+                                <span class="card__description__details__price">44 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+
+                </article>
+
+                <!-- DESSERTS -->
+                <article class="restaurant__main__menu__plats">
+                    <h5 class="restaurant__main__menu__plats__titre">DESSERTS</h5>
+                    <div class="restaurant__main__menu__plats__decoration"></div>
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Pétales de violettes glacés</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Et purée de noisettes</span>
+                                <span class="card__description__details__price">18 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Fondant au chocolat</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Revisité</span>
+                                <span class="card__description__details__price">22 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__description">
+                            <div class="card__description__nom">Millefeuille croustillant</div>
+                            <div class="card__description__details">
+                                <span class="card__description__details__overflow">Myrtilles et pâte d'amande</span>
+                                <span class="card__description__details__price">23 &euro;</span>
+                            </div>
+                        </div>
+                        <div class="card__validation"></div>
+                    </div>
+                    
+
+                </article>
+            </section>
+            <div class="commander">
+                <a href="#restaurants" class="commander__validation">
+                    Commander
+                </a>
             </div>
         </main>
     </div>
+    
 
     <!-- FOOTER -->
     <footer class="footer">

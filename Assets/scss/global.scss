@@ -13,6 +13,7 @@ font-family: 'Shrikhand', cursive;
     text-decoration: unset;
     letter-spacing: 0.05rem;
     box-sizing: border-box;
+    text-overflow: ellipsis;
 }
 a{
     color: black;
@@ -21,5 +22,5 @@ a{
     }
 }
 body{
-    min-width: 360px;
+    min-width: 320px;
 }

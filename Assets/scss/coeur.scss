@@ -1,8 +1,22 @@
+$primary:#9356dc;
+$lightprimary:#9356dc26;
+$secondary:#ff79da;
+$darktertiary:#278b72;
+$tertiary :#99e2d0;
+$darkgray: #c8c8c8;
+$gray: #dcdcdc;
+$lightgray: #f5f5f5;
+$black : #000;
+$lightblack: #353535;
+$white : #fff;
+
 .like{
     &__coeur{
         position: relative;
+        height: 20px;
         &__full{
             display: none;
+            height: 20px;
         }
     }
     &:hover{
@@ -10,7 +24,10 @@
             display: none;
             &__full{
                 display: block;
-                color: red;
+                background-image: linear-gradient(#9356dc,#ff79da);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: #0000001a;
             }
         }
     }

@@ -1,3 +1,52 @@
-
+.card {
+  background-color: #fff;
+  display: flex;
+  margin-top: 0.75rem;
+  border-radius: 15px;
+}
+.card__description {
+  padding: 1rem;
+  width: 100%;
+}
+.card__description__nom {
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 0.2rem;
+}
+.card__description__details {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__description__details__overflow {
+  font-size: 12px;
+  text-overflow: clip;
+}
+.card__description__details__price {
+  font-weight: 800;
+}
+.card:hover .card__description {
+  padding: 1rem;
+  width: 100%;
+}
+.card:hover .card__description__nom {
+  font-weight: 800;
+  font-size: 14px;
+}
+.card:hover .card__description__details {
+  font-size: 12px;
+  text-overflow: clip;
+}
+.card:hover .card__description__details__overflow {
+  font-size: 12px;
+  text-overflow: clip;
+}
+.card:hover .card__validation {
+  width: 75px;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+}
 
 /*# sourceMappingURL=card.css.map */
