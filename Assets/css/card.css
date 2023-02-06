@@ -3,50 +3,110 @@
   display: flex;
   margin-top: 0.75rem;
   border-radius: 15px;
+  animation-duration: 1.5s;
+  animation-name: slideup;
+  /*&:not(:focus){
+      .card{
+          &__validation{
+              background-color: $tertiary;
+              border-radius: 0 15px 15px 0;
+              animation-duration: 0.75s;
+              animation-name: slideout;
+              width: 0px;
+          }
+      }
+  }*/
 }
 .card__description {
-  padding: 1rem;
+  padding: 1rem 0.75rem;
   width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card__description__nom {
   font-weight: 800;
+  max-height: 18px;
   font-size: 14px;
   margin-bottom: 0.2rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card__description__details {
-  font-size: 12px;
   display: grid;
+  font-size: 12px;
   grid-template-columns: auto auto;
   align-items: center;
   justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card__description__details__overflow {
+  display: block;
+  max-height: 14px;
   font-size: 12px;
-  text-overflow: clip;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card__description__details__price {
   font-weight: 800;
+  margin-left: 15px;
 }
 .card:hover .card__description {
-  padding: 1rem;
   width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card:hover .card__description__nom {
   font-weight: 800;
   font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card:hover .card__description__details {
   font-size: 12px;
-  text-overflow: clip;
+  max-height: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  grid-template-columns: auto auto;
 }
 .card:hover .card__description__details__overflow {
   font-size: 12px;
-  text-overflow: clip;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card:hover .card__validation {
-  width: 75px;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
+  animation-duration: 0.75s;
+  animation-name: slidein;
+  width: 75px;
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0%;
+    margin-top: 1.5rem;
+  }
+  to {
+    opacity: 100%;
+    margin-top: 0.75rem;
+  }
+}
+@keyframes slidein {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 75px;
+  }
+}
+@keyframes slideout {
+  from {
+    width: 75px;
+  }
+  to {
+    width: 0px;
+  }
 }
 
 /*# sourceMappingURL=card.css.map */
