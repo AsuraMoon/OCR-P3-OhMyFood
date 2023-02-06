@@ -5,17 +5,6 @@
   border-radius: 15px;
   animation-duration: 1.5s;
   animation-name: slideup;
-  /*&:not(:focus){
-      .card{
-          &__validation{
-              background-color: $tertiary;
-              border-radius: 0 15px 15px 0;
-              animation-duration: 0.75s;
-              animation-name: slideout;
-              width: 0px;
-          }
-      }
-  }*/
 }
 .card__description {
   padding: 1rem 0.75rem;
@@ -50,6 +39,13 @@
 .card__description__details__price {
   font-weight: 800;
   margin-left: 15px;
+}
+.card:not(:focus) .card__validation {
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  animation-duration: 0.75s;
+  animation-name: slideout;
+  width: 0px;
 }
 .card:hover .card__description {
   width: 100%;

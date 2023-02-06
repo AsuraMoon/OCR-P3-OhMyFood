@@ -51,6 +51,17 @@ $white : #fff;
             }
         }
     }
+    &:not(:focus){
+        .card{
+            &__validation{
+                background-color: $tertiary;
+                border-radius: 0 15px 15px 0;
+                animation-duration: 0.75s;
+                animation-name: slideout;
+                width: 0px;
+            }
+        }
+    }
     &:hover{
         .card{
             &__description{
@@ -85,17 +96,6 @@ $white : #fff;
             }
         }
     }
-    /*&:not(:focus){
-        .card{
-            &__validation{
-                background-color: $tertiary;
-                border-radius: 0 15px 15px 0;
-                animation-duration: 0.75s;
-                animation-name: slideout;
-                width: 0px;
-            }
-        }
-    }*/
 }
 
   @keyframes slideup {
