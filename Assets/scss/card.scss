@@ -15,8 +15,7 @@ $white : #fff;
     display: flex;
     margin-top: 0.75rem;
     border-radius: 15px;
-    animation-duration: 1.5s;
-    animation-name: slideup;
+    animation: slideup 2.5s ease-in-out;
     &__description{
         padding: 1rem 0.75rem;
         width: 100%;
@@ -56,8 +55,7 @@ $white : #fff;
             &__validation{
                 background-color: $tertiary;
                 border-radius: 0 15px 15px 0;
-                animation-duration: 0.75s;
-                animation-name: slideout;
+                animation: slideout 1s ease-in-out;
                 width: 0px;
             }
         }
@@ -90,8 +88,7 @@ $white : #fff;
             &__validation{
                 background-color: $tertiary;
                 border-radius: 0 15px 15px 0;
-                animation-duration: 0.75s;
-                animation-name: slidein;
+                animation: slidein 1s ease-in-out;
                 width: 75px;
             }
         }

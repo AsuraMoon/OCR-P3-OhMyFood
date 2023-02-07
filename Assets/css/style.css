@@ -1,3 +1,71 @@
+.chargement {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: rgba(222, 222, 222, 0.9);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  animation: disparition 2s 5s ease-out;
+  animation-fill-mode: forwards;
+}
+.chargement__animation {
+  animation: loading 2s 2 linear;
+  margin: 25px;
+}
+.chargement__animation__lettre {
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+.chargement__animation__lettre.P {
+  color: #9356dc;
+}
+.chargement__animation__lettre.S {
+  color: #ff79da;
+}
+.chargement__animation__lettre.T {
+  color: #99e2d0;
+}
+
+#mot1 {
+  animation-delay: 0.33s;
+}
+
+#mot2 {
+  animation-delay: 0.5s;
+}
+
+#mot3 {
+  animation-delay: 0.66s;
+}
+
+@keyframes disparition {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.75rem);
+  }
+  75% {
+    transform: translateY(-0.75rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* leader */
 .logo {
   width: 100%;
@@ -87,10 +155,6 @@
   font-size: 14px;
 }
 
-.fa-bars {
-  margin-left: 0.1rem;
-}
-
 /* Nav restaurants */
 .restaurants {
   display: flex;
@@ -135,6 +199,22 @@
 }
 .restaurants__choix__carte__description__lieu {
   margin-top: 0.33rem;
+}
+
+.fa-mobile-alt {
+  font-size: 20px;
+}
+
+.fa-ellipsis-v {
+  font-size: 16px;
+}
+
+.fa-utensils {
+  margin-right: 12px;
+}
+
+.fa-hands-helping {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
