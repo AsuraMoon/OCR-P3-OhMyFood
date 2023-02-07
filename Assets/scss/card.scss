@@ -57,6 +57,12 @@ $white : #fff;
                 border-radius: 0 15px 15px 0;
                 animation: slideout 1s ease-in-out;
                 width: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__star{
+                    width: 0px;
+                }
             }
         }
     }
@@ -90,6 +96,15 @@ $white : #fff;
                 border-radius: 0 15px 15px 0;
                 animation: slidein 1s ease-in-out;
                 width: 75px;
+                &__star{
+                    position: relative;
+                    width: unset;
+                    font-size: 20px;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: white;
+                    animation: rotation 0.5s .25s ease-in;
+                }
             }
         }
     }
@@ -125,4 +140,41 @@ $white : #fff;
     to {
         width: 0px;
     }
+  }
+
+  @keyframes rotation{
+    0%{
+        rotate: 0;
+    }
+    10%{
+        rotate: (-36deg);
+    }
+    20%{
+        rotate: (-72deg);
+    }
+    30%{
+        rotate: (-108deg);
+    }
+    40%{
+        rotate: (-144deg);
+    }
+    50%{
+        rotate: (-180deg);
+    }
+    60%{
+        rotate: (-216deg);
+    }
+    70%{
+        rotate: (-252deg);
+    }
+    80%{
+        rotate: (-288deg);
+    }
+    90%{
+        rotate: (-324deg);
+    }
+    100%{
+        rotate: (-360deg);
+    }
+
   }

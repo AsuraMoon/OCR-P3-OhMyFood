@@ -14,13 +14,15 @@ $white : #fff;
     &__coeur{
         position: relative;
         height: 20px;
+        width: 20px;
         &__full{
             display: none;
+            height: 20px;
+            width: 20px;
             /*background: linear-gradient($primary, $secondary);
-            //background-color: red !important;
             -webkit-background-clip: text;
             background-clip: text;
-            //-webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
             color: transparent;*/
         }
     }
@@ -29,12 +31,20 @@ $white : #fff;
             display: none;
             &__full{
                 display: inline-block;
-                background: linear-gradient($primary, $secondary);
-                //background-color: red !important;
+                background: linear-gradient(0deg, $secondary 40%, $primary 100%);
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
                 color: transparent;
+                &--cheats{
+                    display: inline-block;
+                    background: linear-gradient(180deg, $primary, $secondary);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: #c968db;
+                }
+                //background-color: red !important;
                 /*background-color: linear-gradient($primary, $secondary);
                 -webkit-background-clip: text;
                 background-clip: text;
@@ -60,27 +70,6 @@ $white : #fff;
     }*/
 }
 
-@keyframes remplissage{
-        0% {
-            opacity: 0;
-            z-index: -2;
-        }
-      
-        100% {       
-            opacity: 1;
-            z-index: 3;
-        }
-}
-
-@keyframes vidage{
-        from {
-            opacity: 0%;
-        }
-      
-        to {
-            opacity: 100%;
-        }
-}
 /*
 .svg-inline--fa.fa-heart{
     display: inline;
