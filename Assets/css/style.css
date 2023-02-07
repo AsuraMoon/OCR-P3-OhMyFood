@@ -1,23 +1,24 @@
 .chargement {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   background: rgba(222, 222, 222, 0.9);
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 3;
-  animation: disparition 2s 5s ease-out;
+  animation: disparition 2s 3.5s ease-out;
   animation-fill-mode: forwards;
 }
 .chargement__animation {
-  animation: loading 2s 2 linear;
+  animation: loading 1.5s 2s ease-out;
   margin: 25px;
+  display: flex;
 }
 .chargement__animation__lettre {
-  font-size: 80px;
+  font-size: 60px;
   letter-spacing: 2px;
 }
 .chargement__animation__lettre.P {
@@ -31,15 +32,15 @@
 }
 
 #mot1 {
-  animation-delay: 0.33s;
-}
-
-#mot2 {
   animation-delay: 0.5s;
 }
 
+#mot2 {
+  animation-delay: 1s;
+}
+
 #mot3 {
-  animation-delay: 0.66s;
+  animation-delay: 1.5s;
 }
 
 @keyframes disparition {
@@ -52,18 +53,32 @@
     z-index: -2;
   }
 }
-@keyframes loading {
+@keyframes loadingDesktop {
   0% {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(0.75rem);
+    transform: translateY(-3.25rem);
   }
-  75% {
-    transform: translateY(-0.75rem);
+  50% {
+    transform: translateY(1.75rem);
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-1.5rem);
+  }
+  66% {
+    transform: translateY(0.75rem);
+  }
+  100% {
+    transform: translateY(0rem);
   }
 }
 /* leader */
@@ -120,6 +135,7 @@
   margin: 2rem 3rem 1rem;
 }
 .explanation__bubble {
+  cursor: pointer;
   display: flex;
   align-items: center;
   padding: 1.5rem 8%;
@@ -218,9 +234,15 @@
 }
 
 @media (min-width: 769px) {
+  .chargement {
+    flex-direction: row;
+  }
+  .chargement__animation {
+    animation: loadingDesktop 2s 3s ease-out;
+  }
   .explanation {
-    display: grid;
-    grid-template-columns: 20% 26.67% 26.67% 26.67%;
+    display: flex;
+    flex-direction: row;
   }
   .explanation__title {
     margin: 2rem 0.75rem;
@@ -228,7 +250,7 @@
   }
   .explanation__bubble {
     margin: 2rem 0.75rem;
-    padding: 1rem 0.75rem;
+    padding: 1rem 3%;
   }
   .explanation__number {
     display: none;

@@ -3,6 +3,7 @@
 }
 
 .restaurant {
+  cursor: pointer;
   width: 100%;
 }
 .restaurant__pic {

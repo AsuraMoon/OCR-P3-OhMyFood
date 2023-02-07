@@ -42,7 +42,7 @@
 .card:not(:focus) .card__validation {
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
-  animation: slideout 1s ease-in-out;
+  animation: slideout 0.25ms;
   width: 0px;
   display: flex;
   justify-content: center;
@@ -50,6 +50,7 @@
 }
 .card:not(:focus) .card__validation__star {
   width: 0px;
+  display: none;
 }
 .card:hover .card__description {
   width: 100%;
@@ -81,6 +82,7 @@
   width: 75px;
 }
 .card:hover .card__validation__star {
+  display: inline;
   position: relative;
   width: unset;
   font-size: 20px;

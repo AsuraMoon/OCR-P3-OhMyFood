@@ -11,25 +11,27 @@ $lightblack: #353535;
 $darkwhite : rgba(222, 222, 222, 0.90);
 $white : #fff;
 
+
 .chargement{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     background: $darkwhite;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 3;
-    animation: disparition 2s 5s ease-out;
+    animation: disparition 2s 3.5s ease-out;
     animation-fill-mode: forwards;
     //backface-visibility: hidden; // cache la face arrière d'un élement qui devient visible
     &__animation{
-        animation: loading 2s 2 linear;
+        animation: loading 1.5s 2s ease-out;
         margin: 25px;
+        display: flex;
         &__lettre{
-            font-size: 80px;
+            font-size: 60px;
             letter-spacing: 2px;
             &.P{color: $primary;}
             &.S{color: $secondary;}
@@ -38,13 +40,13 @@ $white : #fff;
     }
 }
 #mot1{
-    animation-delay: .33s;
-}
-#mot2{
     animation-delay: .50s;
 }
+#mot2{
+    animation-delay: 1s;
+}
 #mot3{
-    animation-delay: .66s;
+    animation-delay: 1.5s;
 }
 
 @keyframes disparition{
@@ -58,18 +60,33 @@ $white : #fff;
     }
 }
 
-@keyframes loading {
+@keyframes loadingDesktop {
     0% {
         transform: translateY(0);
     }
     25% {
-        transform: translateY(.75rem);
+        transform: translateY(-3.25rem);
     }
-    75% {
-        transform: translateY(-.75rem);
+    50% {
+        transform: translateY(1.75rem);
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-1.5rem);
+    }
+    66% {
+        transform: translateY(.75rem);
+    }
+    100% {
+        transform: translateY(0rem);
     }
 }
 
@@ -128,6 +145,7 @@ $white : #fff;
         margin: 2rem 3rem 1rem;
     }
     &__bubble{
+        cursor: pointer;
         display: flex;
         align-items: center;
         padding: 1.5rem 8%;
@@ -225,16 +243,22 @@ $white : #fff;
 }
 
 @media (min-width: 769px) { 
+    .chargement{
+        flex-direction: row;
+        &__animation{
+        animation: loadingDesktop 2s 3s ease-out;
+        }
+    }
     .explanation{
-        display: grid;
-        grid-template-columns: 20% 26.67% 26.67% 26.67%;
+        display: flex;
+        flex-direction: row;
         &__title{
             margin: 2rem .75rem;
-            padding: 1rem .25rem;
+            padding: 1rem 0.25rem;
         }
         &__bubble{
             margin: 2rem .75rem;
-            padding: 1rem .75rem;
+            padding: 1rem 3%;
         }
         &__number{
             display: none;

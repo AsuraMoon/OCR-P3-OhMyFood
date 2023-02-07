@@ -55,13 +55,14 @@ $white : #fff;
             &__validation{
                 background-color: $tertiary;
                 border-radius: 0 15px 15px 0;
-                animation: slideout 1s ease-in-out;
+                animation: slideout 0.25ms;
                 width: 0px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 &__star{
                     width: 0px;
+                    display: none;
                 }
             }
         }
@@ -97,6 +98,7 @@ $white : #fff;
                 animation: slidein 1s ease-in-out;
                 width: 75px;
                 &__star{
+                    display: inline;
                     position: relative;
                     width: unset;
                     font-size: 20px;
