@@ -74,3 +74,11 @@ $white : #fff;
         padding: 1rem 3.5rem;
     }
 }
+
+@media (min-width: 769px) { 
+    .wrap{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 16px;
+    }
+}

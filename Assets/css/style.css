@@ -217,4 +217,27 @@
   margin-right: 5px;
 }
 
+@media (min-width: 769px) {
+  .explanation {
+    display: grid;
+    grid-template-columns: 20% 26.67% 26.67% 26.67%;
+  }
+  .explanation__title {
+    margin: 2rem 0.75rem;
+    padding: 1rem 0.25rem;
+  }
+  .explanation__bubble {
+    margin: 2rem 0.75rem;
+    padding: 1rem 0.75rem;
+  }
+  .explanation__number {
+    display: none;
+  }
+  .restaurants__choix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

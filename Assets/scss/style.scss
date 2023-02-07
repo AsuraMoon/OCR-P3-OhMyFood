@@ -223,3 +223,27 @@ $white : #fff;
 .fa-hands-helping{
     margin-right: 5px;
 }
+
+@media (min-width: 769px) { 
+    .explanation{
+        display: grid;
+        grid-template-columns: 20% 26.67% 26.67% 26.67%;
+        &__title{
+            margin: 2rem .75rem;
+            padding: 1rem .25rem;
+        }
+        &__bubble{
+            margin: 2rem .75rem;
+            padding: 1rem .75rem;
+        }
+        &__number{
+            display: none;
+        }
+    }
+    .restaurants__choix{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 2rem;
+    }
+}
+
