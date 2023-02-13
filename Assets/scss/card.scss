@@ -15,7 +15,19 @@ $white : #fff;
     display: flex;
     margin-top: 0.75rem;
     border-radius: 15px;
-    animation: slideup 2.5s ease-in-out;
+    opacity: 0;
+    &__entrées{
+        animation: slideup 2.5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    &__plats{
+        animation: slideup 2.5s 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    &__desserts{
+        animation: slideup 2.5s 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
     &__description{
         padding: 1rem 0.75rem;
         width: 100%;
@@ -55,8 +67,7 @@ $white : #fff;
             &__validation{
                 background-color: $tertiary;
                 border-radius: 0 15px 15px 0;
-                animation: slideout 0.25ms;
-                width: 0px;
+                animation: slideout 0.25ms ease;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -148,7 +159,7 @@ $white : #fff;
     0%{
         rotate: 0;
     }
-    10%{
+   /* 10%{
         rotate: (-36deg);
     }
     20%{
@@ -174,7 +185,7 @@ $white : #fff;
     }
     90%{
         rotate: (-324deg);
-    }
+    }*/
     100%{
         rotate: (-360deg);
     }

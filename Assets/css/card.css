@@ -1,9 +1,22 @@
+@charset "UTF-8";
 .card {
   background-color: #fff;
   display: flex;
   margin-top: 0.75rem;
   border-radius: 15px;
+  opacity: 0;
+}
+.card__entrées {
   animation: slideup 2.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.card__plats {
+  animation: slideup 2.5s 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.card__desserts {
+  animation: slideup 2.5s 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 .card__description {
   padding: 1rem 0.75rem;
@@ -42,8 +55,7 @@
 .card:not(:focus) .card__validation {
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
-  animation: slideout 0.25ms;
-  width: 0px;
+  animation: slideout 0.25ms ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,33 +134,33 @@
   0% {
     rotate: 0;
   }
-  10% {
-    rotate: -36deg;
-  }
-  20% {
-    rotate: -72deg;
-  }
-  30% {
-    rotate: -108deg;
-  }
-  40% {
-    rotate: -144deg;
-  }
-  50% {
-    rotate: -180deg;
-  }
-  60% {
-    rotate: -216deg;
-  }
-  70% {
-    rotate: -252deg;
-  }
-  80% {
-    rotate: -288deg;
-  }
-  90% {
-    rotate: -324deg;
-  }
+  /* 10%{
+       rotate: (-36deg);
+   }
+   20%{
+       rotate: (-72deg);
+   }
+   30%{
+       rotate: (-108deg);
+   }
+   40%{
+       rotate: (-144deg);
+   }
+   50%{
+       rotate: (-180deg);
+   }
+   60%{
+       rotate: (-216deg);
+   }
+   70%{
+       rotate: (-252deg);
+   }
+   80%{
+       rotate: (-288deg);
+   }
+   90%{
+       rotate: (-324deg);
+   }*/
   100% {
     rotate: -360deg;
   }

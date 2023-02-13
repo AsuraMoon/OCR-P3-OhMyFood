@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  background: rgba(222, 222, 222, 0.9);
+  background: rgba(222, 222, 222, 0.9019607843);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -141,10 +141,12 @@
   padding: 1.5rem 8%;
   border-radius: 1.5rem;
   margin: 1rem 2rem;
-  box-shadow: 0 0.5rem 1rem #f5f5f5;
+  box-shadow: 0 0.5rem 1rem #c8c8c8;
 }
 .explanation__bubble:hover {
   background: rgba(147, 86, 220, 0.1490196078);
+  box-shadow: 0 1rem 1rem #dcdcdc;
+  transform: scale(1.02);
 }
 .explanation__bubble:hover .explanation__icon {
   color: #9356dc;
@@ -185,7 +187,7 @@
   display: block;
   width: 100%;
   border-radius: 2rem;
-  box-shadow: 0 0.5rem 1rem rgb(200, 200, 200);
+  box-shadow: 0 0.5rem 1rem #dcdcdc;
   cursor: pointer;
   position: relative;
   margin-bottom: 2.5rem;
@@ -215,6 +217,10 @@
 }
 .restaurants__choix__carte__description__lieu {
   margin-top: 0.33rem;
+}
+.restaurants__choix__carte:hover {
+  box-shadow: 0 1rem 1rem #dcdcdc;
+  transform: scale(1.02);
 }
 
 .fa-mobile-alt {
