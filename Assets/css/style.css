@@ -146,7 +146,6 @@
 .explanation__bubble:hover {
   background: rgba(147, 86, 220, 0.1490196078);
   box-shadow: 0 1rem 1rem #dcdcdc;
-  transform: scale(1.02);
 }
 .explanation__bubble:hover .explanation__icon {
   color: #9356dc;

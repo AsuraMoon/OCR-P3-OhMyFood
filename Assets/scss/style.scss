@@ -155,7 +155,6 @@ $white : #fff;
         &:hover{
             background: $lightprimary;
             box-shadow: 0 1.0rem 1rem $gray;
-            transform: scale(1.02);
             .explanation__icon{
                 color: $primary;
             }

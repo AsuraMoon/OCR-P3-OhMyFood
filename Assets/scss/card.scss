@@ -31,7 +31,7 @@ $white : #fff;
     &__description{
         padding: 1rem 0.75rem;
         width: 100%;
-            white-space: nowrap;
+ 
             overflow: hidden;
             text-overflow: ellipsis;
         &__nom{
@@ -39,7 +39,7 @@ $white : #fff;
             max-height: 18px;
             font-size: 14px;
             margin-bottom: 0.20rem;
-            white-space: nowrap;
+ 
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -49,14 +49,14 @@ $white : #fff;
             grid-template-columns: auto auto;
             align-items: center;
             justify-content: space-between;
-            white-space: nowrap;
+ 
             overflow: hidden;
             text-overflow: ellipsis;
             &__overflow{
                 display: block;
                 max-height: 14px;
                 font-size: 12px;
-            white-space: nowrap;
+ 
             overflow: hidden;
             text-overflow: ellipsis;
             }
@@ -86,27 +86,22 @@ $white : #fff;
         .card{
             &__description{
                 width: 100%;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                
                 &__nom{
                     font-weight: 800;
-                    font-size: 14px;                    
-                    white-space: nowrap;
+                    font-size: 14px;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
                 &__details{
                     font-size: 12px;
-                    max-height: 14px;                    
+                    max-height: 14px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     grid-template-columns: auto auto;
                     &__overflow{
-                        font-size: 12px;                        
-                        white-space: nowrap;
+                        font-size: 12px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                     }
