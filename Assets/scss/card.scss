@@ -13,7 +13,6 @@ $white : #fff;
 .card{
     background-color: $white;
     display: flex;
-    margin-top: 0.75rem;
     border-radius: 15px;
     opacity: 0;
     &__entrées{
@@ -111,7 +110,7 @@ $white : #fff;
                 background-color: $tertiary;
                 border-radius: 0 15px 15px 0;
                 animation: slidein 1s ease-in-out;
-                width: 75px;
+                animation-fill-mode: forwards;
                 &__star{
                     display: inline;
                     position: relative;
@@ -130,12 +129,12 @@ $white : #fff;
   @keyframes slideup {
     from {
         opacity: 0%;
-        margin-top: 1.5rem;
+        margin-top: 1.25rem;
     }
-  
+    
     to {
-        opacity: 100%;
         margin-top: 0.75rem;
+        opacity: 100%;
     }
   }
 
@@ -143,7 +142,7 @@ $white : #fff;
     from {
         width: 0px;
     }
-  
+    
     to {
         width: 75px;
     }
